@@ -1,0 +1,14 @@
+title: "Heather"
+baseurl: "hbpasti.github.io/heather-hugo"
+languageCode: en-us
+theme: heather-hugo
+
+permalinks:
+  post: /:year/:month/:title/
+
+params:
+  description: A Hyperminimal J̶e̶k̶y̶l̶l̶ Hugo Theme
+  author: 
+    name: "Hbpasti"
+    email: "your@email.com"
+...

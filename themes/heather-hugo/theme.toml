@@ -1,0 +1,16 @@
+name = "Heather Hugo"
+license = "MIT"
+licenselink = "//opensource.org/licenses/MIT"
+description: A Hyperminimal J̶e̶k̶y̶l̶l̶ Hugo Theme
+homepage = "hbpasti.github.io/heather-hugo"
+tags = ["blog"]
+features = ["blog"]
+
+[author]
+  name = "hbpasti"
+  homepage = "//hbpasti.github.io"
+
+[original]
+  name = "Heather"
+  homepage = "//jxnblk.github.io/Heather/"
+  repo = "https://github.com/jxnblk/Heather/"
