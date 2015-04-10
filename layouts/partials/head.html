@@ -1,0 +1,25 @@
+<!doctype html> 
+<html lang="{{ .Site.LanguageCode }}"> 
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Site.Title }}</title>
+  <meta name="author" content="{{ .Site.Author.name }}">
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Icons -->
+  <link rel="icon" href="{{ .Site.BaseURL }}/favicon.png" />
+  <link rel="apple-touch-icon-precomposed" href="{{ .Site.BaseURL }}/apple-touch-icon.png" />
+  
+  <!-- Style & Font -->
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/style.css" />
+  <link href='//fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+  <div class="wrap">
+    <header class="mb">
+      <h1 class="h2 m-0"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+      <p>{{ .Site.Params.description }}</p>
+    </header>

@@ -1,32 +1,64 @@
-# Heather
-A Hyperminimal Jekyll Theme
+# Heather for Hugo
 
-http://jxnblk.github.io/Heather/
+A Hyperminimal J̶e̶k̶y̶l̶l̶ Hugo Theme
 
-## About Jekyll
-Jekyll is a static site generator that plays nicely with Github pages and is extremely quick to set up.
+http://hbpasti.github.io/heather-hugo/
 
-Read more about Jekyll: http://jekyllrb.com/
+## About Heather
+
+[Heather](//jxnblk.com/Heather/) is hyperminimal theme
+for [Jekyll](//jekyllrb.com) created by Brent Jackson
+([jxnblk](//jxnblk.com/)).
+
+## About J̶e̶k̶y̶l̶l̶ Hugo
+
+[Hugo](//gohugo.io) is a (very) fast static site generator written in Go.
 
 ## Get Started
-Once you have Jekyll set up, the first thing you'll want to do is edit the `_config.yml` file. Change the name, description, author and url. An example localhost url is commented out for conveniently switching between local and production environments.
 
-    name: "Heather"
-    description: "A Hyperminimal Jekyll Theme"
-    author: "Jxnblk"
+Once you have Hugo set up, create your blog with `hugo new` and then
+add the heather-hugo theme to the `themes` directory.
 
-    # url: "http://localhost:4000"
-    url: "http://jxnblk.github.io/Heather"
+You can just download and extract it there or add it as a submodule
+with:
 
-    exclude: [README.md, Rakefile]
-    paginate: 16
-    permalink: /:title
+    git submodule add https://github.com/hbpasti/heather-hugo themes/heather-hugo
 
-## Creating a Post
-Once you've customized the settings, use the `_posts/2103-01-01-template.md` file as a starting point for creating a post. Rename the file to reflect the date and title of your post. Open the file, change the title and write your own content.
+Then edit your blog's config file to use heather-hugo theme:
+
+- `config.toml`
+
+    ``` toml
+    theme = "heather-hugo"
+    ```
+
+- `config.yaml`
+
+    ``` yaml
+    theme: "heather-hugo"
+    ```
+
+A sample YAML config file would look like this:
+
+    title: "Heather"
+    baseurl: "http://localhost:1313"
+    languageCode: en-us
+    theme: heather-hugo
+
+    permalinks:
+      post: /:year/:month/:title/
+
+    taxonomies:
+      tags: ["meta", "theme", "blog"]
+
+    params:
+      description: A Hyperminimal J̶e̶k̶y̶l̶l̶ Hugo Theme
+      author: 
+        name: "Hbpasti"
+        email: "your@email.com"
+    ...
 
 ---
 
 MIT License
 http://opensource.org/licenses/MIT
-
