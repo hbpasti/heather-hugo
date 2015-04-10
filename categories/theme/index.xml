@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theme on Heather</title>
+    <link>hbpasti.github.io/heather-hugo/categories/theme/</link>
+    <description>Recent content in Theme on Heather</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Oct 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="hbpasti.github.io/heather-hugo/categories/theme/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Meet Heather</title>
+      <link>/hbpasti.github.io/heather-hugo/posts/meet-heather/</link>
+      <pubDate>Sun, 27 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/hbpasti.github.io/heather-hugo/posts/meet-heather/</guid>
+      <description>&lt;p&gt;Heather is a hyperminimal theme for Jekyll, featuring type set in Merriweather at a comfortable reading size across many devices. Heather is great for a simple blog, or as a starting point for creating your own Jekyll theme. Get started with Heather on Github: &lt;a href=&#34;http://github.com/jxnblk/Heather&#34;&gt;http://github.com/jxnblk/Heather&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

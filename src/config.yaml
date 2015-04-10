@@ -2,6 +2,7 @@ title: "Heather"
 baseurl: "hbpasti.github.io/heather-hugo"
 languageCode: en-us
 theme: heather-hugo
+publishdir: ../
 
 permalinks:
   post: /:year/:month/:title/
