@@ -1,5 +1,5 @@
 title: "Heather"
-baseurl: "hbpasti.github.io/heather-hugo"
+baseurl: "//hbpasti.github.io/heather-hugo"
 languageCode: en-us
 theme: heather-hugo
 publishdir: ../

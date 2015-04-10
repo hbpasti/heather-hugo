@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Heather</title>
-    <link>hbpasti.github.io/heather-hugo/categories/blog/</link>
+    <link>//hbpasti.github.io/heather-hugo/categories/blog/</link>
     <description>Recent content in Blog on Heather</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 09 Apr 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="hbpasti.github.io/heather-hugo/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//hbpasti.github.io/heather-hugo/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Example content</title>
-      <link>/hbpasti.github.io/heather-hugo/posts/example-content/</link>
+      <link>//hbpasti.github.io/heather-hugo/posts/example-content/</link>
       <pubDate>Thu, 09 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>/hbpasti.github.io/heather-hugo/posts/example-content/</guid>
+      <guid>//hbpasti.github.io/heather-hugo/posts/example-content/</guid>
       <description>
 
 &lt;div class=&#34;message&#34;&gt;
@@ -164,10 +164,10 @@
     
     <item>
       <title>Go Template Primer</title>
-      <link>/hbpasti.github.io/heather-hugo/posts/go-template-primer/</link>
+      <link>//hbpasti.github.io/heather-hugo/posts/go-template-primer/</link>
       <pubDate>Sun, 05 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>/hbpasti.github.io/heather-hugo/posts/go-template-primer/</guid>
+      <guid>//hbpasti.github.io/heather-hugo/posts/go-template-primer/</guid>
       <description>
 
 &lt;p&gt;Hugo uses the excellent &lt;a href=&#34;http://golang.org/&#34;&gt;Go&lt;/a&gt;
@@ -230,7 +230,7 @@ functions.&lt;/p&gt;
 &lt;p&gt;Each Go template has a struct (object) made available to it. In Hugo,
 each template is passed either a page or a node struct depending on
 which type of page you are rendering. More details are available on the
-&lt;a href=&#34;hbpasti.github.io/heather-hugo/layout/variables/&#34;&gt;variables&lt;/a&gt; page.&lt;/p&gt;
+&lt;a href=&#34;//hbpasti.github.io/heather-hugo/layout/variables/&#34;&gt;variables&lt;/a&gt; page.&lt;/p&gt;
 
 &lt;p&gt;A variable is accessed by referencing the variable name.&lt;/p&gt;
 
@@ -247,7 +247,7 @@ which type of page you are rendering. More details are available on the
 
 &lt;p&gt;Go template ships with a few functions which provide basic
 functionality. The Go template system also provides a mechanism for
-applications to extend the available functions with their own. &lt;a href=&#34;hbpasti.github.io/heather-hugo/layout/functions/&#34;&gt;Hugo
+applications to extend the available functions with their own. &lt;a href=&#34;//hbpasti.github.io/heather-hugo/layout/functions/&#34;&gt;Hugo
 template functions&lt;/a&gt; provide some additional
 functionality we believe are useful for building websites. Functions are
 called by using their name followed by the required parameters separated
@@ -279,7 +279,7 @@ at the /layout/ directory within Hugo.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;And, starting with Hugo v0.12, you may also use the &lt;code&gt;partial&lt;/code&gt; call for
-&lt;a href=&#34;hbpasti.github.io/heather-hugo/templates/partials/&#34;&gt;partial templates&lt;/a&gt;:&lt;/p&gt;
+&lt;a href=&#34;//hbpasti.github.io/heather-hugo/templates/partials/&#34;&gt;partial templates&lt;/a&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;{{ partial &amp;quot;header.html&amp;quot; . }}
 &lt;/code&gt;&lt;/pre&gt;
@@ -501,7 +501,7 @@ however you want to inside of your templates.&lt;/p&gt;
 &lt;h2 id=&#34;using-content-page-parameters:7dcf2c2662266227508fc67d2e4d6122&#34;&gt;Using Content (page) Parameters&lt;/h2&gt;
 
 &lt;p&gt;In each piece of content, you can provide variables to be used by the
-templates. This happens in the &lt;a href=&#34;hbpasti.github.io/heather-hugo/content/front-matter/&#34;&gt;front matter&lt;/a&gt;.&lt;/p&gt;
+templates. This happens in the &lt;a href=&#34;//hbpasti.github.io/heather-hugo/content/front-matter/&#34;&gt;front matter&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;An example of this is used in this documentation site. Most of the pages
 benefit from having the table of contents provided. Sometimes the TOC
@@ -580,7 +580,7 @@ can do so, such as in this example:&lt;/p&gt;
 &lt;h1 id=&#34;template-example-show-only-upcoming-events:7dcf2c2662266227508fc67d2e4d6122&#34;&gt;Template example: Show only upcoming events&lt;/h1&gt;
 
 &lt;p&gt;Go allows you to do more than what’s shown here. Using Hugo’s
-&lt;a href=&#34;hbpasti.github.io/heather-hugo/templates/functions/#toc_4&#34;&gt;&lt;code&gt;where&lt;/code&gt;&lt;/a&gt; function and Go built-ins, we can
+&lt;a href=&#34;//hbpasti.github.io/heather-hugo/templates/functions/#toc_4&#34;&gt;&lt;code&gt;where&lt;/code&gt;&lt;/a&gt; function and Go built-ins, we can
 list only the items from &lt;code&gt;content/events/&lt;/code&gt; whose date (set in the front
 matter) is in the future:&lt;/p&gt;
 
