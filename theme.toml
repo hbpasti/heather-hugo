@@ -1,7 +1,7 @@
 name = "Heather Hugo"
 license = "MIT"
 licenselink = "//opensource.org/licenses/MIT"
-description: A Hyperminimal J̶e̶k̶y̶l̶l̶ Hugo Theme
+description = "A Hyperminimal J̶e̶k̶y̶l̶l̶ Hugo Theme"
 homepage = "hbpasti.github.io/heather-hugo"
 tags = ["blog"]
 features = ["blog"]
