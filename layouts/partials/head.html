@@ -11,9 +11,12 @@
   <link rel="icon" href="/favicon.png" />
   <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
   
-  <!-- Style & Font -->
+  <!-- CSS Style -->
   <link rel="stylesheet" href="/style.css" />
+  {{ if eq .Site.Params.GoogleFont true }}
+  <!-- Load Google Font Merriweather -->
   <link href='//fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+  {{ end }}
 
 </head>
 <body>
