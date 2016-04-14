@@ -13,6 +13,9 @@
   
   <!-- CSS Style -->
   <link rel="stylesheet" href="/style.css" />
+  {{ if isset .Site.Params "CustomCSS" }}
+  <link href='{{.Site.BaseURL}}{{.Site.Params.CustomCSS}}' rel='stylesheet' type='text/css'>
+  {{ end }}
   {{ if eq .Site.Params.GoogleFont true }}
   <!-- Load Google Font Merriweather -->
   <link href='//fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
@@ -24,5 +27,5 @@
   <div class="wrap">
     <header class="mb">
       <h1 class="h2 m-0"><a href="/">{{ .Site.Title }}</a></h1>
-      <p>{{ .Site.Params.description }}</p>
+      <p>{{ .Site.Params.Description }}</p>
     </header>
