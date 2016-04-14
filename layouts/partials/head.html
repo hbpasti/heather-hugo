@@ -14,7 +14,7 @@
   <!-- CSS Style -->
   <link rel="stylesheet" href="/style.css" />
   {{ if isset .Site.Params "CustomCSS" }}
-  <link href='{{.Site.BaseURL}}{{.Site.Params.CustomCSS}}' rel='stylesheet' type='text/css'>
+  <link href='{{ .Site.BaseURL }}{{ .Site.Params.CustomCSS }}' rel='stylesheet' type='text/css'>
   {{ end }}
   {{ if eq .Site.Params.GoogleFont true }}
   <!-- Load Google Font Merriweather -->
@@ -22,10 +22,10 @@
   {{ end }}
 
 </head>
-<body>
+<body class="{{ with .Site.Params.PageLayoutClass }}{{ . }}{{ end }}">
 
   <div class="wrap">
     <header class="mb">
       <h1 class="h2 m-0"><a href="/">{{ .Site.Title }}</a></h1>
-      <p>{{ .Site.Params.Description }}</p>
+      <p class="site-description">{{ .Site.Params.Description }}</p>
     </header>
