@@ -22,7 +22,21 @@
   {{ end }}
 
 </head>
+
 <body class="{{ with .Site.Params.PageLayoutClass }}{{ . }}{{ end }}">
+
+  {{ if or (isset .Site.Params "HeaderGraphic") (isset .Site.Params "HeaderHTML") }}
+  <div class="header center">
+    {{ if isset .Site.Params "HeaderHTML" }}
+    <p> {{ .Site.Params.HeaderHTML | safeHTML }} </p>
+    {{ end }}
+    {{ if isset .Site.Params "HeaderGraphic" }}
+    <a href="/">
+      <img src="{{ .Site.BaseURL }}{{ .Site.Params.HeaderGraphic }}" alt="{{ .Site.Params.HeaderGraphicAlt }}" title="{{ .Site.Params.HeaderGraphicTitle }}"/>
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
 
   <div class="wrap">
     <header class="mb">
