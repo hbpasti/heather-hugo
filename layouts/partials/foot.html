@@ -1,12 +1,12 @@
 </div>
 
-{{ if or (isset .Site.Params "FooterGraphic") (isset .Site.Params "FooterText") }}
+{{ if or (isset .Site.Params "footerGraphic") (isset .Site.Params "footerHTML") }}
 <footer class="center">
-  {{ if isset .Site.Params "FooterHTML" }}
-  <p> {{ .Site.Params.FooterHTML | safeHTML }} </p>
+  {{ if isset .Site.Params "footerHTML" }}
+  <p> {{ .Site.Params.footerHTML | safeHTML }} </p>
   {{ end }}
-  {{ if isset .Site.Params "FooterGraphic" }}
-  <img src="{{ .Site.BaseURL }}{{ .Site.Params.FooterGraphic }}" alt="{{ .Site.Params.FooterGraphicAlt }}" title="{{ .Site.Params.FooterGraphicTitle }}"/>
+  {{ if isset .Site.Params "footerGraphic" }}
+  <img src="{{ .Site.BaseURL }}{{ .Site.Params.footerGraphic }}" alt="{{ .Site.Params.footerGraphicAlt }}" title="{{ .Site.Params.footerGraphicTitle }}"/>
   {{ end }}
 </footer>
 {{ end }}

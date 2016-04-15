@@ -13,10 +13,10 @@
   
   <!-- CSS Style -->
   <link rel="stylesheet" href="/style.css" />
-  {{ if isset .Site.Params "CustomCSS" }}
-  <link href='{{ .Site.BaseURL }}{{ .Site.Params.CustomCSS }}' rel='stylesheet' type='text/css'>
+  {{ if isset .Site.Params "customCSS" }}
+  <link href='{{ .Site.BaseURL }}{{ .Site.Params.customCSS }}' rel='stylesheet' type='text/css'>
   {{ end }}
-  {{ if eq .Site.Params.GoogleFont true }}
+  {{ if eq .Site.Params.googleFont true }}
   <!-- Load Google Font Merriweather -->
   <link href='//fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
   {{ end }}
@@ -25,14 +25,14 @@
 
 <body class="{{ with .Site.Params.PageLayoutClass }}{{ . }}{{ end }}">
 
-  {{ if or (isset .Site.Params "HeaderGraphic") (isset .Site.Params "HeaderHTML") }}
+  {{ if or (isset .Site.Params "headerGraphic") (isset .Site.Params "headerHTML") }}
   <div class="header center">
-    {{ if isset .Site.Params "HeaderHTML" }}
-    <p> {{ .Site.Params.HeaderHTML | safeHTML }} </p>
+    {{ if isset .Site.Params "headerHTML" }}
+    <p> {{ .Site.Params.headerHTML | safeHTML }} </p>
     {{ end }}
-    {{ if isset .Site.Params "HeaderGraphic" }}
+    {{ if isset .Site.Params "headerGraphic" }}
     <a href="/">
-      <img src="{{ .Site.BaseURL }}{{ .Site.Params.HeaderGraphic }}" alt="{{ .Site.Params.HeaderGraphicAlt }}" title="{{ .Site.Params.HeaderGraphicTitle }}"/>
+      <img src="{{ .Site.BaseURL }}{{ .Site.Params.headerGraphic }}" alt="{{ .Site.Params.headerGraphicAlt }}" title="{{ .Site.Params.headerGraphicTitle }}"/>
     </a>
     {{ end }}
   </div>
@@ -41,5 +41,5 @@
   <div class="wrap">
     <header class="mb">
       <h1 class="h2 m-0"><a href="/">{{ .Site.Title }}</a></h1>
-      <p class="site-description">{{ .Site.Params.Description }}</p>
+      <p class="site-description">{{ .Site.Params.description }}</p>
     </header>
