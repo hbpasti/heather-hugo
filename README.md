@@ -14,6 +14,8 @@ for [Jekyll](//jekyllrb.com) created by Brent Jackson
 
 [Hugo](//gohugo.io) is a (very) fast static site generator written in Go.
 
+Compatible with hugo [0.15.0](http://gohugo.io/meta/release-notes/)
+
 ## Get Started
 
 Once you have Hugo set up, create your blog with `hugo new` and then
@@ -38,7 +40,7 @@ Then edit your blog's config file to use heather-hugo theme:
     theme: "heather-hugo"
     ```
 
-A sample YAML config file would look like this:
+For example, a minimal YAML config file looks like this:
 
     title: "Heather"
     baseurl: "http://localhost:1313"
@@ -56,6 +58,7 @@ A sample YAML config file would look like this:
       author: 
         name: "Hbpasti"
         email: "your@email.com"
+      readMoreLabel: "Read more"
     ...
 
 ---
