@@ -23,7 +23,7 @@
 
 </head>
 
-<body class="{{ with .Site.Params.PageLayoutClass }}{{ . }}{{ end }}">
+<body class="{{ with .Site.Params.pageLayoutClass }}{{ . }}{{ end }}">
 
   {{ if or (isset .Site.Params "headerGraphic") (isset .Site.Params "headerHTML") }}
   <div class="header center">
