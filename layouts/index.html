@@ -4,7 +4,7 @@
     {{ range .Data.Pages }}
     <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
     <p>{{ .Summary }}</p>
-    <p class="small"><a href="{{ .Permalink }}">Read More »</a></p>
+    <p class="small"><a href="{{ .Permalink }}">{{ .Site.Params.readMoreLabel }} »</a></p>
     {{ end }}
   </article>
 </main>
