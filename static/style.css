@@ -23,7 +23,7 @@ body {
   font-family: 'Merriweather', serif;
 }
 
-footer p { text-align: left; }
+.header p, footer p { text-align: left; }
 
 h1, h2, h3, h4, h5, h6 { line-height: 1.25; }
 h1, .h1 {
