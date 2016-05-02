@@ -11,15 +11,35 @@
   <link rel="icon" href="/favicon.png" />
   <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
   
-  <!-- Style & Font -->
+  <!-- CSS Style -->
   <link rel="stylesheet" href="/style.css" />
+  {{ if isset .Site.Params "customCSS" }}
+  <link href='{{ .Site.BaseURL }}{{ .Site.Params.customCSS }}' rel='stylesheet' type='text/css'>
+  {{ end }}
+  {{ if eq .Site.Params.googleFont true }}
+  <!-- Load Google Font Merriweather -->
   <link href='//fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+  {{ end }}
 
 </head>
-<body>
+
+<body class="{{ with .Site.Params.pageLayoutClass }}{{ . }}{{ end }}">
+
+  {{ if or (isset .Site.Params "headerGraphic") (isset .Site.Params "headerHTML") }}
+  <div class="header center">
+    {{ if isset .Site.Params "headerHTML" }}
+    <p> {{ .Site.Params.headerHTML | safeHTML }} </p>
+    {{ end }}
+    {{ if isset .Site.Params "headerGraphic" }}
+    <a href="/">
+      <img src="{{ .Site.BaseURL }}{{ .Site.Params.headerGraphic }}" alt="{{ .Site.Params.headerGraphicAlt }}" title="{{ .Site.Params.headerGraphicTitle }}"/>
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
 
   <div class="wrap">
     <header class="mb">
       <h1 class="h2 m-0"><a href="/">{{ .Site.Title }}</a></h1>
-      <p>{{ .Site.Params.description }}</p>
+      <p class="site-description">{{ .Site.Params.description }}</p>
     </header>

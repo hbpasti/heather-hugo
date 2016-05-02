@@ -1,10 +1,16 @@
+
 {{ partial "head.html" . }}
 <main class="posts">
   <article class="post">
     {{ range .Data.Pages }}
-    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-    <p>{{ .Summary }}</p>
-    <p class="small"><a href="{{ .Permalink }}">Read More »</a></p>
+      <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+      <p>{{ .Summary }}</p>
+      <!-- Support heather-hugo users who have not yet added the "Read more" label option to their site config. -->
+      {{ if isset .Site.Params "readMoreLabel" }}
+        <p class="small"><a href="{{ .Permalink }}">{{ .Site.Params.readMoreLabel }} »</a></p>
+      {{ else }}
+        <p class="small"><a href="{{ .Permalink }}">Read more »</a></p>
+      {{ end }}
     {{ end }}
   </article>
 </main>
