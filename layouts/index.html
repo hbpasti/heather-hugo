@@ -1,8 +1,8 @@
 
 {{ partial "head.html" . }}
 <main class="posts">
+  {{ range .Data.Pages }}
   <article class="post">
-    {{ range .Data.Pages }}
       <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
       <p>{{ .Summary }}</p>
       <!-- Support heather-hugo users who have not yet added the "Read more" label option to their site config. -->
@@ -11,7 +11,7 @@
       {{ else }}
         <p class="small"><a href="{{ .Permalink }}">Read more »</a></p>
       {{ end }}
-    {{ end }}
   </article>
+  {{ end }}
 </main>
 {{ partial "foot.html" . }}
